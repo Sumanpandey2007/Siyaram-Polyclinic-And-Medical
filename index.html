@@ -1,0 +1,1505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#087443" />
+  <meta name="description" content="SIYARAM POLYCLINIC & MEDICAL — medical store, doctor consultations and basic health checkups in Sindurpank, Sambalpur, Odisha." />
+  <title>SIYARAM POLYCLINIC & MEDICAL</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #087443;
+      --green-dark: #045a33;
+      --green-light: #e8f7ed;
+      --green-soft: #c9f0d6;
+      --white: #ffffff;
+      --text: #173629;
+      --muted: #e1f4e8;
+      --border: #d8e9dd;
+      --shadow: 0 12px 35px rgba(4, 85, 47, .13);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: #f6fbf7;
+      color: var(--text);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    button, input, textarea, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    img { max-width: 100%; }
+
+    .container {
+      width: min(1160px, calc(100% - 36px));
+      margin-inline: auto;
+    }
+
+    .announcement {
+      background: var(--green-dark);
+      color: white;
+      text-align: center;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* HEADER */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-banner {
+      padding: 26px 16px 23px;
+      text-align: center;
+      background: linear-gradient(135deg, #ffffff, #e9f8ed);
+    }
+
+    .brand-mark {
+      width: 54px;
+      height: 54px;
+      margin: 0 auto 10px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: white;
+      background: var(--green);
+      font-size: 27px;
+      font-weight: 800;
+      box-shadow: 0 8px 20px rgba(8, 116, 67, .2);
+    }
+
+    .brand-banner h1 {
+      font-family: "Manrope", sans-serif;
+      color: var(--green-dark);
+      font-size: clamp(24px, 4.2vw, 43px);
+      font-weight: 800;
+      letter-spacing: -.9px;
+      line-height: 1.2;
+    }
+
+    .brand-banner p {
+      color: #507361;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+
+    .header-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px 25px;
+      flex-wrap: wrap;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #476b58;
+      background: white;
+    }
+
+    .header-contact span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .header-contact b { color: var(--green); }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--green);
+      color: white;
+      box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    }
+
+    .nav-inner {
+      min-height: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      flex-wrap: wrap;
+      padding-block: 7px;
+    }
+
+    .nav-inner a {
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: background .2s;
+    }
+
+    .nav-inner a:hover {
+      background: rgba(255,255,255,.18);
+    }
+
+    /* COMMON */
+    section { padding: 76px 0; }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #d9f5e2;
+      color: var(--green-dark);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      margin-bottom: 13px;
+    }
+
+    .section-heading h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(28px, 4vw, 39px);
+      line-height: 1.2;
+      letter-spacing: -.8px;
+      color: var(--green-dark);
+    }
+
+    .section-heading p {
+      margin-top: 12px;
+      color: #668171;
+      font-size: 15px;
+    }
+
+    .btn {
+      min-height: 46px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 20px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform .2s, background .2s;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-white {
+      background: white;
+      color: var(--green-dark);
+    }
+
+    .btn-green {
+      background: var(--green);
+      color: white;
+    }
+
+    .btn-green:hover { background: var(--green-dark); }
+
+    .btn-outline {
+      background: transparent;
+      border-color: rgba(255,255,255,.65);
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 62px 0;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(166, 232, 183, .45), transparent 30%),
+        linear-gradient(130deg, #e7f8ec, #f9fdf9);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.12;
+      letter-spacing: -1.7px;
+      color: var(--green-dark);
+    }
+
+    .hero h2 span { color: #14945a; }
+
+    .hero-copy > p {
+      margin-top: 19px;
+      max-width: 580px;
+      font-size: 16px;
+      color: #5c7767;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 27px;
+    }
+
+    .hero .btn-outline {
+      border-color: #8bb99c;
+      color: var(--green-dark);
+    }
+
+    .hero-panel {
+      position: relative;
+      padding: 29px;
+      border-radius: 28px;
+      background: var(--green);
+      color: white;
+      box-shadow: 0 22px 55px rgba(4, 85, 47, .2);
+      overflow: hidden;
+    }
+
+    .hero-panel::after {
+      content: "+";
+      position: absolute;
+      right: 6px;
+      bottom: -72px;
+      font-size: 240px;
+      font-weight: 800;
+      line-height: 1;
+      color: rgba(255,255,255,.07);
+      pointer-events: none;
+    }
+
+    .hero-icon {
+      width: 65px;
+      height: 65px;
+      display: grid;
+      place-items: center;
+      border-radius: 20px;
+      background: white;
+      color: var(--green);
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .hero-panel h3 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin-bottom: 9px;
+    }
+
+    .hero-panel p {
+      font-size: 14px;
+      color: #e1f5e8;
+    }
+
+    .hero-panel ul {
+      position: relative;
+      z-index: 1;
+      list-style: none;
+      margin-top: 20px;
+      display: grid;
+      gap: 11px;
+    }
+
+    .hero-panel li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+
+    .hero-panel li span {
+      color: #a9f0c0;
+      font-weight: 900;
+    }
+
+    /* QUICK CARDS */
+    .quick-section { padding: 0 0 35px; margin-top: -2px; }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+    }
+
+    .quick-card {
+      padding: 22px;
+      border-radius: var(--radius);
+      background: var(--green);
+      color: white;
+      border: 1px solid #39a96b;
+      box-shadow: var(--shadow);
+      transition: transform .25s;
+    }
+
+    .quick-card:hover { transform: translateY(-4px); }
+
+    .quick-icon {
+      width: 47px;
+      height: 47px;
+      display: grid;
+      place-items: center;
+      background: white;
+      color: var(--green);
+      border-radius: 15px;
+      font-size: 23px;
+      margin-bottom: 13px;
+    }
+
+    .quick-card h3 { font-size: 17px; color: white; }
+    .quick-card p { color: #e4f8eb; font-size: 13px; margin-top: 5px; }
+
+    /* DOCTORS MARQUEE */
+    .doctors-section { background: #edf8f0; overflow: hidden; }
+
+    .marquee-wrap {
+      overflow: hidden;
+      width: 100%;
+      padding: 6px 0 20px;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+    }
+
+    .doctor-track {
+      display: flex;
+      align-items: stretch;
+      gap: 20px;
+      width: max-content;
+      animation: doctor-scroll 48s linear infinite;
+    }
+
+    .marquee-wrap:hover .doctor-track { animation-play-state: paused; }
+
+    .doctor-group {
+      display: flex;
+      gap: 20px;
+      flex-shrink: 0;
+      align-items: stretch;
+    }
+
+    @keyframes doctor-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .doctor-card {
+      width: 285px;
+      min-height: 290px;
+      padding: 24px;
+      background: var(--green);
+      color: white;
+      border: 1px solid #39a96b;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s;
+    }
+
+    .doctor-card:hover { transform: translateY(-4px); }
+
+    .doctor-top {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 17px;
+    }
+
+    .avatar {
+      width: 54px;
+      height: 54px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: white;
+      color: var(--green);
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .doctor-card h3 {
+      color: white;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .doctor-card .qualification {
+      color: #c9f0d6;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .doctor-card .specialty {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .doctor-card .doctor-details {
+      color: #e4f8eb;
+      font-size: 13px;
+      flex-grow: 1;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-self: flex-start;
+      margin-top: 16px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: white;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .marquee-note {
+      text-align: center;
+      color: #648270;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 25px;
+      background: var(--green);
+      color: white;
+      border: 1px solid #39a96b;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: transform .25s;
+    }
+
+    .service-card:hover { transform: translateY(-4px); }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      background: white;
+      color: var(--green);
+      border-radius: 16px;
+      font-size: 25px;
+      margin-bottom: 16px;
+    }
+
+    .service-card h3 { color: white; font-size: 18px; }
+    .service-card p { color: #e4f8eb; font-size: 14px; margin-top: 8px; }
+
+    /* ABOUT */
+    .about-section { background: #edf8f0; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 35px;
+      align-items: stretch;
+    }
+
+    .about-visual {
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+      border-radius: 28px;
+      color: white;
+      background: linear-gradient(145deg, #087443, #0c9955);
+      box-shadow: var(--shadow);
+    }
+
+    .about-visual .big-cross {
+      font-size: 92px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .about-visual h3 { font-size: 23px; margin-top: 15px; }
+    .about-visual p { color: #d7f5e1; font-size: 14px; margin-top: 7px; }
+
+    .about-content {
+      background: var(--green);
+      color: white;
+      border: 1px solid #39a96b;
+      padding: 30px;
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-content h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(25px, 3vw, 35px);
+      line-height: 1.25;
+      color: white;
+    }
+
+    .about-content p {
+      margin-top: 15px;
+      color: #e4f8eb;
+      font-size: 14px;
+    }
+
+    .about-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .about-point {
+      padding: 12px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 13px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* REVIEWS */
+    .reviews-section { overflow: hidden; }
+
+    .review-track {
+      display: flex;
+      gap: 18px;
+      width: max-content;
+      animation: review-scroll 35s linear infinite;
+    }
+
+    .reviews-marquee {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+    }
+
+    .reviews-marquee:hover .review-track { animation-play-state: paused; }
+
+    @keyframes review-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .review-card {
+      width: 300px;
+      min-height: 175px;
+      padding: 22px;
+      border-radius: var(--radius);
+      background: var(--green);
+      color: white;
+      border: 1px solid #39a96b;
+      box-shadow: var(--shadow);
+      transition: transform .25s;
+    }
+
+    .review-card:hover { transform: translateY(-4px); }
+    .review-card .stars { color: #ffe082; letter-spacing: 3px; font-size: 17px; }
+    .review-card p { margin-top: 12px; font-size: 14px; color: #e4f8eb; }
+    .review-card strong { display: block; color: white; margin-top: 13px; font-size: 13px; }
+
+    .review-disclaimer {
+      text-align: center;
+      color: #668171;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+
+    /* CONTACT */
+    .contact-section { background: #edf8f0; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .contact-card, .form-card {
+      background: var(--green);
+      color: white;
+      border: 1px solid #39a96b;
+      padding: 27px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card h3, .form-card h3 {
+      color: white;
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 13px;
+      margin: 19px 0;
+      color: #e4f8eb;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-line .line-icon {
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: white;
+      color: var(--green);
+      border-radius: 13px;
+      font-size: 18px;
+    }
+
+    .contact-line strong {
+      display: block;
+      color: white;
+      margin-bottom: 3px;
+    }
+
+    .contact-line a {
+      color: #e4f8eb;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 23px;
+    }
+
+    .form-card > p {
+      color: #e4f8eb;
+      font-size: 14px;
+      margin-top: -10px;
+      margin-bottom: 18px;
+    }
+
+    .form-group { margin-bottom: 14px; }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .form-card input,
+    .form-card select,
+    .form-card textarea {
+      display: block;
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #b8dfc5;
+      border-radius: 11px;
+      background: white;
+      color: #18352a;
+      outline: none;
+    }
+
+    .form-card input:focus,
+    .form-card select:focus,
+    .form-card textarea:focus {
+      border-color: #8ee6ad;
+      box-shadow: 0 0 0 3px rgba(255,255,255,.16);
+    }
+
+    .form-card textarea {
+      min-height: 105px;
+      resize: vertical;
+    }
+
+    .form-card .btn { width: 100%; }
+
+    .form-note {
+      margin-top: 12px;
+      color: #c9f0d6;
+      font-size: 11px;
+    }
+
+    .map-wrap {
+      margin-top: 25px;
+      overflow: hidden;
+      border: 4px solid white;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      background: white;
+    }
+
+    .map-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 320px;
+      border: 0;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 32px 0 22px;
+      background: #034b2b;
+      color: white;
+    }
+
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 22px;
+    }
+
+    .footer-main h3 { font-size: 20px; }
+    .footer-main p { color: #c9f0d6; font-size: 13px; margin-top: 5px; }
+    .footer-links { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; }
+    .footer-links a:hover { text-decoration: underline; }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,.17);
+      padding-top: 18px;
+      text-align: center;
+      color: #b8dfc5;
+      font-size: 12px;
+    }
+
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 200;
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      background: #087443;
+      color: white;
+      border: 3px solid white;
+      border-radius: 50%;
+      font-size: 27px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.22);
+      transition: transform .2s;
+    }
+
+    .whatsapp-float:hover { transform: scale(1.08); }
+
+    /* REVEAL ANIMATIONS */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 850px) {
+      .hero-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .hero-grid { gap: 28px; }
+      .hero-panel { max-width: 600px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .quick-grid { grid-template-columns: 1fr; }
+      .quick-card { display: flex; align-items: center; gap: 15px; }
+      .quick-icon { margin: 0; flex-shrink: 0; }
+      .quick-card p { margin-top: 2px; }
+    }
+
+    @media (max-width: 560px) {
+      .container { width: min(100% - 24px, 1160px); }
+      .brand-banner { padding: 22px 12px; }
+      .brand-banner h1 { font-size: 25px; letter-spacing: -.6px; }
+      .brand-banner p { font-size: 12px; }
+      .brand-mark { width: 47px; height: 47px; font-size: 24px; }
+      .header-contact { gap: 8px 13px; font-size: 11px; }
+      .nav-inner { gap: 1px; }
+      .nav-inner a { padding: 8px 9px; font-size: 11px; }
+      section { padding: 55px 0; }
+      .hero { padding: 43px 0; }
+      .hero h2 { font-size: 38px; }
+      .hero-copy > p { font-size: 14px; }
+      .hero-panel { padding: 23px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .about-points { grid-template-columns: 1fr; }
+      .contact-card, .form-card, .about-content { padding: 21px; }
+      .map-wrap iframe { height: 260px; }
+      .doctor-card { width: 270px; }
+      .whatsapp-float { right: 14px; bottom: 14px; width: 53px; height: 53px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement">
+    Welcome to SIYARAM POLYCLINIC &amp; MEDICAL
+  </div>
+
+  <header class="site-header" id="home">
+    <div class="brand-banner">
+      <div class="brand-mark" aria-hidden="true">+</div>
+      <h1 id="clinic-name">SIYARAM POLYCLINIC &amp; MEDICAL</h1>
+      <p id="clinic-tagline">Medical Store • Polyclinic • Doctor Consultations</p>
+    </div>
+    <div class="header-contact">
+      <span>📍 <b id="header-location">Sindurpank, Sambalpur, Odisha</b></span>
+      <span>📞 <a id="header-phone" href="tel:+919132154742">Call us</a></span>
+      <span>🕒 <b id="header-hours">Please call to confirm timings</b></span>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="#home">Home</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Your local healthcare destination</span>
+          <h2>Healthcare closer to <span>home.</span></h2>
+          <p id="hero-description">
+            Find medical store services, doctor consultations and basic health checkups at SIYARAM POLYCLINIC & MEDICAL in Sindurpank, Sambalpur.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-green" id="hero-call" href="tel:+919132154742">📞 Call the Clinic</a>
+            <a class="btn btn-outline" href="#doctors">Meet Our Doctors →</a>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="hero-icon" aria-hidden="true">✚</div>
+          <h3>Care for your everyday health needs</h3>
+          <p>Contact the clinic to confirm doctor availability, consultation timings and services before visiting.</p>
+          <ul>
+            <li><span>✓</span> Medical store</li>
+            <li><span>✓</span> Doctor consultations</li>
+            <li><span>✓</span> Basic health checkups</li>
+            <li><span>✓</span> Local contact and enquiry</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-section">
+      <div class="container quick-grid" id="quick-cards"></div>
+    </section>
+
+    <section class="doctors-section" id="doctors">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Medical professionals</span>
+          <h2>Meet Our Doctors</h2>
+          <p>Doctor information and areas of practice. Please contact the clinic to confirm availability and appointment timings.</p>
+        </div>
+      </div>
+
+      <div class="marquee-wrap" aria-label="Scrolling doctor cards">
+        <div class="doctor-track" id="doctor-track"></div>
+      </div>
+
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">What we offer</span>
+          <h2>Our Services</h2>
+          <p>Contact us for information about available services, consultation schedules and medicines.</p>
+        </div>
+        <div class="services-grid" id="services-grid"></div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="big-cross" aria-hidden="true">+</div>
+          <h3 id="about-clinic-name">SIYARAM POLYCLINIC &amp; MEDICAL</h3>
+          <p id="about-location">Sindurpank, Sambalpur, Odisha</p>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="eyebrow">About our clinic</span>
+          <h2 id="about-heading">Healthcare and medical services in your locality</h2>
+          <p id="about-text">
+            SIYARAM POLYCLINIC & MEDICAL provides medical store services, doctor consultations and basic health checkups. Please contact us directly for current service details and doctor availability.
+          </p>
+          <div class="about-points">
+            <div class="about-point">✚ Medical store</div>
+            <div class="about-point">♡ Doctor consultations</div>
+            <div class="about-point">✓ Basic health checkups</div>
+            <div class="about-point">📍 Local healthcare access</div>
+          </div>
+          <div style="margin-top:24px">
+            <a class="btn btn-white" href="#contact">Contact Us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Patient feedback</span>
+          <h2>Reviews &amp; Experiences</h2>
+          
+        </div>
+      </div>
+      <div class="reviews-marquee">
+        <div class="review-track" id="review-track"></div>
+      </div>
+      
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Contact Our Clinic</h2>
+          <p>Call us for enquiries about consultations, opening hours and available services.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Clinic Information</h3>
+
+            <div class="contact-line">
+              <div class="line-icon">📍</div>
+              <div>
+                <strong>Our Location</strong>
+                <span id="contact-address">Sindurpank, Sambalpur, Odisha, India</span>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="line-icon">📞</div>
+              <div>
+                <strong>Phone Number 1</strong>
+                <a id="contact-phone1" href="tel:+919132154742">+91 91321 54742</a>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="line-icon">📞</div>
+              <div>
+                <strong>Phone Number 2</strong>
+                <a id="contact-phone2" href="tel:+917325938072">+91 73259 38072</a>
+              </div>
+            </div>
+
+            <div class="contact-line">
+              <div class="line-icon">🕒</div>
+              <div>
+                <strong>Opening Hours</strong>
+                <span id="contact-hours">Please call to confirm timings</span>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a class="btn btn-white" id="contact-call" href="tel:+919132154742">📞 Call Now</a>
+              <a class="btn btn-outline" id="contact-whatsapp" href="https://wa.me/917325938072" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+            </div>
+          </div>
+
+          <div class="form-card reveal">
+            <h3>Send an Enquiry</h3>
+            <p>Complete this form to prepare an enquiry message in WhatsApp.</p>
+
+            <form id="enquiry-form">
+              <div class="form-group">
+                <label for="customer-name">Your Name *</label>
+                <input id="customer-name" name="name" type="text" placeholder="Enter your name" required maxlength="80" />
+              </div>
+
+              <div class="form-group">
+                <label for="customer-phone">Your Phone Number</label>
+                <input id="customer-phone" name="phone" type="tel" placeholder="Enter your phone number" maxlength="20" />
+              </div>
+
+              <div class="form-group">
+                <label for="enquiry-type">What would you like to enquire about? *</label>
+                <select id="enquiry-type" name="enquiry" required>
+                  <option value="">Select an option</option>
+                  <option>Doctor consultation</option>
+                  <option>Doctor availability</option>
+                  <option>Medical store</option>
+                  <option>Basic health checkup</option>
+                  <option>Opening hours</option>
+                  <option>Other enquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="customer-message">Message</label>
+                <textarea id="customer-message" name="message" placeholder="Write your enquiry here..." maxlength="1000"></textarea>
+              </div>
+
+              <button class="btn btn-white" type="submit">Send Enquiry on WhatsApp →</button>
+              <p class="form-note">This form opens WhatsApp with your message. It does not itself book an appointment or store your information.</p>
+              <p id="form-status" role="status" aria-live="polite" class="form-note"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal">
+          <iframe id="clinic-map" title="Map showing SIYARAM POLYCLINIC & MEDICAL location" src="https://maps.google.com/maps?q=Sindurpank%2C%20Sambalpur%2C%20Odisha&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <h3 id="footer-name">SIYARAM POLYCLINIC &amp; MEDICAL</h3>
+          <p id="footer-address">Sindurpank, Sambalpur, Odisha, India</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#doctors">Doctors</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span id="current-year"></span> <span id="copyright-name">SIYARAM POLYCLINIC &amp; MEDICAL</span>. All rights reserved.
+        <br>For emergencies, contact local emergency services or visit the nearest emergency department.
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" id="floating-whatsapp" href="https://wa.me/917325938072" target="_blank" rel="noopener noreferrer" aria-label="Contact the clinic on WhatsApp">✆</a>
+
+  <script>
+    /*
+      ==========================================================
+      EDIT YOUR WEBSITE DETAILS HERE
+      Change the values below instead of searching the whole file.
+      Phone numbers must include the country code, digits only.
+      ==========================================================
+    */
+
+    const SITE = {
+      clinicName: "SIYARAM POLYCLINIC & MEDICAL",
+      tagline: "Medical Store • Polyclinic • Doctor Consultations",
+      address: "Sindurpank, Sambalpur, Odisha, India",
+
+      phone1: "919132154742",
+      phone2: "917325938072",
+      whatsapp: "917325938072",
+
+      openingHours: "Please call to confirm timings",
+
+      heroDescription:
+        "Find medical store services, doctor consultations and basic health checkups at SIYARAM POLYCLINIC & MEDICAL in Sindurpank, Sambalpur.",
+
+      aboutHeading: "Healthcare and medical services in your locality",
+
+      aboutText:
+        "SIYARAM POLYCLINIC & MEDICAL provides medical store services, doctor consultations and basic health checkups. Please contact us directly for current service details and doctor availability.",
+
+      mapSearch: "SIYARAM POLYCLINIC AND MEDICAL, Sindurpank, Sambalpur, Odisha",
+
+      quickCards: [
+        {
+          icon: "✚",
+          title: "Medical Store",
+          description: "Contact the store for medicine availability and related enquiries."
+        },
+        {
+          icon: "♡",
+          title: "Doctor Consultations",
+          description: "Ask about doctor schedules and consultation availability."
+        },
+        {
+          icon: "✓",
+          title: "Basic Health Checkups",
+          description: "Contact the clinic for details of available checkup services."
+        }
+      ],
+
+      doctors: [
+        {
+          name: "Dr. Dibya Prakash Barik",
+          qualification: "MBBS · MD",
+          specialty: "Physician",
+          details: "MD (SCBMCH), Fellowship in Diabetes (UK), Assistant Professor, VIMSAR.",
+          initials: "DB",
+          tag: "Physician"
+        },
+        {
+          name: "Dr. Sharmila Pradhan",
+          qualification: "MD · Obs. & Gyn.",
+          specialty: "Obstetrics & Gynaecology",
+          details: "Professor and Laparoscopy Surgeon, V.S.S. Medical College, Burla.",
+          initials: "SP",
+          tag: "Women's Health"
+        },
+        {
+          name: "Dr. Manoj Kumar Dehuri",
+          qualification: "MD · Paediatrics",
+          specialty: "Paediatrics",
+          details: "NALS & PALS, APGPN (Boston), paediatric and neonatal care.",
+          initials: "MD",
+          tag: "Child Health"
+        },
+        {
+          name: "Dr. Santosh Prasad Sharma",
+          qualification: "MD · Paediatrics",
+          specialty: "Paediatrics",
+          details: "NALS & PALS. Contact the clinic to confirm consultation availability.",
+          initials: "SS",
+          tag: "Child Health"
+        },
+        {
+          name: "Dr. R.K. Meher",
+          qualification: "Neuro & Spine Consultant",
+          specialty: "Neurology & Spine",
+          details: "Consultant for headache, migraine, stroke, paralysis, epilepsy, back and neck pain, spine injury, vertigo, tremor, numbness and weakness.",
+          initials: "RM",
+          tag: "Neuro & Spine"
+        }
+      ],
+
+      services: [
+        {
+          icon: "💊",
+          title: "Medical Store",
+          description: "Contact the store to enquire about medicine availability and related services."
+        },
+        {
+          icon: "🩺",
+          title: "Doctor Consultations",
+          description: "Ask the clinic about available doctors, specialties and consultation schedules."
+        },
+        {
+          icon: "♡",
+          title: "Basic Health Checkups",
+          description: "Contact the clinic to confirm which basic health checkups are available."
+        },
+        {
+          icon: "👩‍⚕️",
+          title: "Women's Health",
+          description: "Enquire about the listed obstetrics and gynaecology consultation services."
+        },
+        {
+          icon: "🧸",
+          title: "Child Health",
+          description: "Enquire about the listed paediatric consultation services."
+        },
+        {
+          icon: "🧠",
+          title: "Neuro & Spine Enquiries",
+          description: "Contact the clinic for information about the listed neuro and spine consultant."
+        }
+      ],
+
+      
+      reviews: [
+        {
+          stars: "★★★★",
+          text: "The clinic was convenient for my visit. I recommend contacting the clinic in advance to confirm doctor availability and timings.",
+          author: "Mukesh Sharma"
+        },
+        {
+          stars: "★★★★★",
+          text: "I visited the clinic for a consultation. The doctor explained the consultation clearly and answered my questions.",
+          author: "Padmesh Pandey"
+        },
+        {
+          stars: "★★★★★",
+          text: "I appreciated the assistance I received when asking questions about the available services.",
+          author: "Ankit Sahu"
+        },
+        {
+          stars: "★★★★★",
+          text: "The medical store was convenient to visit. I could enquire about the medicines I needed.",
+          author: "Khushi Naik"
+        },
+        {
+          stars: "★★★★★",
+          text: "The doctor listened to my concerns and explained the consultation in a way I could understand.",
+          author: "Puneet Khan"
+        },
+        {
+          stars: "★★★★★",
+          text: "My experience at the medical store was good. The staff were helpful, and I was able to ask about the medicines I needed.",
+          author: "Rahul Dash"
+        }
+      ]
+    };
+
+    /*
+      ==========================================================
+      WEBSITE FUNCTIONALITY
+      Usually you do not need to edit anything below this line.
+      ==========================================================
+    */
+
+    const byId = (id) => document.getElementById(id);
+
+    function setText(id, value) {
+      const element = byId(id);
+      if (element) element.textContent = value;
+    }
+
+    function digitsOnly(value) {
+      return String(value || "").replace(/\D/g, "");
+    }
+
+    function phoneHref(number) {
+      const cleaned = digitsOnly(number);
+      return cleaned ? "tel:+" + cleaned : "#contact";
+    }
+
+    function whatsappHref(number, message = "") {
+      const cleaned = digitsOnly(number);
+      if (!cleaned) return "#contact";
+      return "https://wa.me/" + cleaned +
+        (message ? "?text=" + encodeURIComponent(message) : "");
+    }
+
+    function escapeHTML(value) {
+      return String(value ?? "").replace(/[&<>"']/g, character => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      })[character]);
+    }
+
+    function applyClinicDetails() {
+      document.title = SITE.clinicName;
+      setText("clinic-name", SITE.clinicName);
+      setText("clinic-tagline", SITE.tagline);
+      setText("header-location", SITE.address);
+      setText("header-hours", SITE.openingHours);
+      setText("hero-description", SITE.heroDescription);
+      setText("about-clinic-name", SITE.clinicName);
+      setText("about-location", SITE.address);
+      setText("about-heading", SITE.aboutHeading);
+      setText("about-text", SITE.aboutText);
+      setText("contact-address", SITE.address);
+      setText("contact-hours", SITE.openingHours);
+      setText("footer-name", SITE.clinicName);
+      setText("footer-address", SITE.address);
+      setText("copyright-name", SITE.clinicName);
+      setText("current-year", new Date().getFullYear());
+
+      byId("header-phone").href = phoneHref(SITE.phone1);
+      byId("header-phone").textContent = SITE.phone1
+        ? "+" + digitsOnly(SITE.phone1)
+        : "Contact the clinic";
+
+      byId("hero-call").href = phoneHref(SITE.phone1);
+      byId("contact-call").href = phoneHref(SITE.phone1);
+
+      byId("contact-phone1").href = phoneHref(SITE.phone1);
+      byId("contact-phone1").textContent = SITE.phone1
+        ? "+" + digitsOnly(SITE.phone1)
+        : "Not provided";
+
+      byId("contact-phone2").href = phoneHref(SITE.phone2);
+      byId("contact-phone2").textContent = SITE.phone2
+        ? "+" + digitsOnly(SITE.phone2)
+        : "Not provided";
+
+      const waURL = whatsappHref(SITE.whatsapp);
+      byId("contact-whatsapp").href = waURL;
+      byId("floating-whatsapp").href = waURL;
+
+      const mapQuery = encodeURIComponent(SITE.mapSearch || SITE.address);
+      byId("clinic-map").src =
+        "https://maps.google.com/maps?q=" + mapQuery +
+        "&t=&z=14&ie=UTF8&iwloc=&output=embed";
+    }
+
+    function renderQuickCards() {
+      byId("quick-cards").innerHTML = SITE.quickCards.map(item => `
+        <article class="quick-card reveal">
+          <div class="quick-icon" aria-hidden="true">${escapeHTML(item.icon)}</div>
+          <div>
+            <h3>${escapeHTML(item.title)}</h3>
+            <p>${escapeHTML(item.description)}</p>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function doctorCard(doctor) {
+      return `
+        <article class="doctor-card">
+          <div class="doctor-top">
+            <div class="avatar" aria-hidden="true">${escapeHTML(doctor.initials)}</div>
+            <div>
+              <h3>${escapeHTML(doctor.name)}</h3>
+              <p class="qualification">${escapeHTML(doctor.qualification)}</p>
+            </div>
+          </div>
+          <p class="specialty">${escapeHTML(doctor.specialty)}</p>
+          <p class="doctor-details">${escapeHTML(doctor.details)}</p>
+          <span class="pill">${escapeHTML(doctor.tag)}</span>
+        </article>
+      `;
+    }
+
+    function renderDoctors() {
+      const cards = SITE.doctors.map(doctorCard).join("");
+
+      // Duplicate the group to create a continuous marquee.
+      byId("doctor-track").innerHTML = `
+        <div class="doctor-group">${cards}</div>
+        <div class="doctor-group" aria-hidden="true">${cards}</div>
+      `;
+    }
+
+    function renderServices() {
+      byId("services-grid").innerHTML = SITE.services.map(item => `
+        <article class="service-card reveal">
+          <div class="service-icon" aria-hidden="true">${escapeHTML(item.icon)}</div>
+          <h3>${escapeHTML(item.title)}</h3>
+          <p>${escapeHTML(item.description)}</p>
+        </article>
+      `).join("");
+    }
+
+    function reviewCard(review) {
+      return `
+        <article class="review-card">
+          <div class="stars" aria-label="Sample rating">${escapeHTML(review.stars)}</div>
+          <p>${escapeHTML(review.text)}</p>
+          <strong>${escapeHTML(review.author)}</strong>
+        </article>
+      `;
+    }
+
+    function renderReviews() {
+      const cards = SITE.reviews.map(reviewCard).join("");
+
+      // Duplicate cards for a continuous scrolling effect.
+      byId("review-track").innerHTML = `
+        <div class="doctor-group">${cards}</div>
+        <div class="doctor-group" aria-hidden="true">${cards}</div>
+      `;
+    }
+
+    function setupRevealAnimations() {
+      const elements = document.querySelectorAll(".reveal");
+
+      if (!("IntersectionObserver" in window)) {
+        elements.forEach(element => element.classList.add("visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      elements.forEach(element => observer.observe(element));
+    }
+
+    function setupEnquiryForm() {
+      byId("enquiry-form").addEventListener("submit", event => {
+        event.preventDefault();
+
+        const name = byId("customer-name").value.trim();
+        const phone = byId("customer-phone").value.trim();
+        const enquiry = byId("enquiry-type").value;
+        const message = byId("customer-message").value.trim();
+        const status = byId("form-status");
+
+        if (!name || !enquiry) {
+          status.textContent = "Please enter your name and select an enquiry type.";
+          return;
+        }
+
+        if (!digitsOnly(SITE.whatsapp)) {
+          status.textContent = "The clinic WhatsApp number has not been configured.";
+          return;
+        }
+
+        const text = [
+          "Hello " + SITE.clinicName + ",",
+          "",
+          "I would like to make an enquiry.",
+          "Name: " + name,
+          phone ? "Phone: " + phone : "",
+          "Enquiry: " + enquiry,
+          message ? "Message: " + message : "",
+          "",
+          "Please share the relevant information. Thank you."
+        ].filter(Boolean).join("\n");
+
+        status.textContent = "Opening WhatsApp with your enquiry...";
+        window.open(whatsappHref(SITE.whatsapp, text), "_blank", "noopener,noreferrer");
+      });
+    }
+
+    applyClinicDetails();
+    renderQuickCards();
+    renderDoctors();
+    renderServices();
+    renderReviews();
+    setupRevealAnimations();
+    setupEnquiryForm();
+  </script>
+</body>
+</html>
